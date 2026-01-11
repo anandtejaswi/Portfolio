@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-63RZQRQHJ7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-63RZQRQHJ7');
+    </script>
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejaswi Anand - Retro OS Portfolio</title>
+    <link rel="canonical" href="https://thisistejaswi.in/">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio of Tejaswi Anand, a Computer Engineering sophomore and developer. Explore projects in AI/ML, Cybersecurity, and Web Development.">
+    <meta name="keywords"
+        content="Tejaswi Anand, Portfolio, Developer, Cybersecurity, AI, Machine Learning, Web Development, Retro OS, Windows 95 Style">
+    <meta name="author" content="Tejaswi Anand">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tejaswi Anand",
+      "url": "https://thisistejaswi.in",
+      "image": "https://thisistejaswi.in/images/tejaswianand.avif",
+      "jobTitle": "Computer Engineering Student & Developer",
+      "sameAs": [
+        "https://github.com/anandtejaswi",
+        "https://linkedin.com/in/anandtejaswi",
+        "https://twitter.com/thisistejaswi"
+      ],
+      "description": "B.Tech sophomore specialized in Programming, Science, and Cyber Security."
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thisistejaswi.in/">
+    <meta property="og:title" content="Tejaswi Anand - Retro OS Portfolio">
+    <meta property="og:description"
+        content="Welcome to my world. Explore my projects, skills, and resume in a retro interactive desktop environment.">
+    <meta property="og:image" content="images/background.avif">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thisistejaswi.in/">
+    <meta property="twitter:title" content="Tejaswi Anand - Retro OS Portfolio">
+    <meta property="twitter:description"
+        content="Welcome to my world. Explore my projects, skills, and resume in a retro interactive desktop environment.">
+    <meta property="twitter:image" content="images/background.avif">
+
+    <!-- Styles from CDN and Local -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/Portfolio.avif">
+</head>
+
+<body>
+    <div id="top-bar">
+        <div id="top-bar-title">TEJASWI@PORTFOLIO</div>
+    </div>
+
+    <div id="desktop">
+
+        <h1 class="desktop-title">Hii!!!<br>This is Tejaswi...<br>Welcome to my world.</h1>
+
+        <!-- TryHackMe Badge -->
+        <div id="thm-badge-container">
+            <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6594237"
+                style='border: none; width: 325px; height: 85px; overflow: hidden;' scrolling="no"></iframe>
+        </div>
+
+        <ul id="desktop-icons">
+            <li class="desktop-icon" data-window="work-window" tabindex="0" role="button"
+                aria-label="Open Project Projects">
+                <img src="images/Portfolio.avif" alt="Work/Projects Icon">
+                <p>Projects</p>
+            </li>
+            <li class="desktop-icon" data-window="skills-window" tabindex="0" role="button" aria-label="Open Skills">
+                <img src="images/Skills.avif" alt="Skills Icon">
+                <p>Skills</p>
+            </li>
+            <li class="desktop-icon" data-window="about-me-window" tabindex="0" role="button"
+                aria-label="Open About Me">
+                <img src="images/About_me.avif" alt="About Me Icon">
+                <p>About Me</p>
+            </li>
+            <!-- Badges Icon -->
+            <li class="desktop-icon" data-window="badges-window" tabindex="0" role="button" aria-label="Open Badges">
+                <img src="images/badge.avif" alt="Badges Icon">
+                <p>Badges</p>
+            </li>
+            <li class="desktop-icon" data-window="courses-window" tabindex="0" role="button"
+                aria-label="Open Certificates">
+                <img src="images/Certification.avif" alt="Certificates Icon">
+                <p>Certificates</p>
+            </li>
+            <li class="desktop-icon" data-window="contact-window" tabindex="0" role="button" aria-label="Open Contact">
+                <img src="images/Contact.avif" alt="Contact Icon">
+                <p>Contact</p>
+            </li>
+            <li class="desktop-icon" id="resume-icon" data-window="resume-window" tabindex="0" role="button"
+                aria-label="Open Resume">
+                <img src="images/Resume-icon.avif" alt="Resume Icon">
+                <p>Resume</p>
+            </li>
+            <!-- External Links -->
+            <li class="desktop-icon" id="github-icon" tabindex="0" role="button" aria-label="Open GitHub Profile">
+                <img src="images/Github.avif" alt="GitHub Icon">
+                <p>GitHub</p>
+            </li>
+            <li class="desktop-icon" id="hobby-icon" tabindex="0" role="button" aria-label="Open Hobby Page">
+                <img src="images/Hobby.avif" alt="Hobby Icon">
+                <p>Hobby.exe</p>
+            </li>
+
+        </ul>
+
+        <!-- WORK/PROJECTS WINDOW -->
+        <div id="work-window" class="window">
+            <div class="title-bar">
+                <span class="title-bar-text">Work/Projects</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="work-window" aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="work-window" aria-label="Close"></button>
+                </div>
+            </div>
+            <!-- Content loaded via JS -->
+            <div class="window-body"></div>
+        </div>
+
+        <!-- RESUME WINDOW -->
+        <div id="resume-window" class="window" style="width: 800px; height: 600px;">
+            <div class="title-bar">
+                <span class="title-bar-text">Resume.pdf</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="resume-window" aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="resume-window" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body" style="padding: 0; overflow: hidden;">
+                <iframe src="images/resume.pdf" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+        </div>
+
+        <!-- PROJECT DETAIL WINDOWS -->
+        <div id="project-anomalyze-window" class="window">
+            <div class="title-bar">
+                <span class="title-bar-text">Project: Anomalyze</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="project-anomalyze-window"
+                        aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="project-anomalyze-window"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body"></div>
+        </div>
+
+        <div id="project-eligify-window" class="window">
+            <div class="title-bar">
+                <span class="title-bar-text">Project: Eligify</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="project-eligify-window"
+                        aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="project-eligify-window"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body"></div>
+        </div>
+
+        <div id="project-solar-swing-window" class="window">
+            <div class="title-bar">
+                <span class="title-bar-text">Project: Solar Swing</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="project-solar-swing-window"
+                        aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="project-solar-swing-window"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body"></div>
+        </div>
+
+        <!-- ABOUT ME WINDOW -->
+        <div id="about-me-window" class="window">
+            <div class="title-bar">
+                <span class="title-bar-text">About Me (readme.txt)</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="about-me-window"
+                        aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="about-me-window" aria-label="Close"></button>
+                </div>
+            </div>
+            <div id="about-me-content" class="window-body"></div>
+        </div>
+
+        <!-- CONTACT WINDOW -->
+        <div id="contact-window" class="window">
+            <div class="title-bar">
+                <span class="title-bar-text">Contact</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="contact-window"
+                        aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="contact-window" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body"></div>
+        </div>
+
+        <!-- SKILLS WINDOW -->
+        <div id="skills-window" class="window">
+            <div class="title-bar">
+                <span class="title-bar-text">Skills.log</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="skills-window" aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="skills-window" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body"></div>
+        </div>
+
+        <!-- BADGES WINDOW -->
+        <div id="badges-window" class="window">
+            <div class="title-bar">
+                <span class="title-bar-text">Badges.exe</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="badges-window" aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="badges-window" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body"></div>
+        </div>
+
+        <!-- COURSES & CERTIFICATIONS WINDOW -->
+        <div id="courses-window" class="window">
+            <div class="title-bar">
+                <span class="title-bar-text">Certificates.log</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="courses-window"
+                        aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="courses-window" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body"></div>
+        </div>
+
+        <!-- CERTIFICATE VIEWER WINDOWS (Kept separate for specific images if needed, but could be generic) -->
+        <!-- Since Cert items have specific layouts or images, keeping them generic viewer might be hard if they aren't just images.
+             The original code showed single images. I'll use the generic viewer for these in the component logic or if they use the viewer.
+             But the original code had windows: cert-fd-program-window.
+             I haven't created component files for specific cert windows, just the list in `certificates.html`.
+             If I want to simplify, I should use the Generic Viewer for certs too.
+             The current `certificates.html` uses `data-cert="fd-program"`, which `main.js` maps to `openWindow('cert-fd-program-window')`.
+             I have NOT created these window shells yet.
+             I will add shells for them below, OR better, I should have mapped them to component files.
+             However, I didn't create component files for each single certificate image. 
+             Strategy: I will create ONE generic "Certificate Viewer" window (same as image viewer really) or keep the shells.
+             I'll add the shells to be safe, but empty. `main.js` will try to load `components/cert-fd-program.html` if I had mapped it.
+             I didn't map it.
+             So `main.js` will open `cert-fd-program-window`. It will be empty!
+             I need to fix this.
+             Modification: I will update `certificates.html` (in my head) or `main.js` to open the generic viewer instead.
+             OR I can just add `onclick="openImageViewer('images/fd_program.png', 'Certificate')"` in `certificates.html`.
+             I'll assume `main.js` logic for `data-cert` is legacy and update `certificates.html` later if I can, OR
+             I will add the windows here with the IMG tag inside them so they work without fetch.
+             Since they are single images, inlining them in `index.html` shells is actually cleaner than a fetch for 1 line of HTML.
+        -->
+
+        <div id="cert-fd-program-window" class="window image-viewer">
+            <div class="title-bar">
+                <span class="title-bar-text">Certificate: FD Program</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="cert-fd-program-window"
+                        aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="cert-fd-program-window"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body"><img src="images/fd_program.avif" alt="FD Program Certificate"></div>
+        </div>
+
+        <div id="cert-anhad-window" class="window image-viewer">
+            <div class="title-bar">
+                <span class="title-bar-text">Certificate: Gen AI Hackathon</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="cert-anhad-window"
+                        aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="cert-anhad-window" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body"><img src="images/anhad.avif" alt="Anhad Gen AI Hackathon Certificate"></div>
+        </div>
+
+        <div id="cert-sih-window" class="window image-viewer">
+            <div class="title-bar">
+                <span class="title-bar-text">Certificate: SIH Hackathon</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="cert-sih-window"
+                        aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="cert-sih-window" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body"><img src="images/sih.png" alt="SIH Internal Hackathon Certificate"></div>
+        </div>
+
+        <!-- PROFILE PIC VIEWER -->
+        <div id="profile-pic-viewer" class="window profile-pic-viewer" style="width: 320px; height: 370px;">
+            <div class="title-bar">
+                <span class="title-bar-text">Photo of Tejaswi Anand</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="profile-pic-viewer"
+                        aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="profile-pic-viewer" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <img src="images/tejaswianand.avif" alt="My Picture">
+            </div>
+        </div>
+
+        <!-- GENERIC IMAGE VIEWER -->
+        <div id="generic-image-viewer" class="window image-viewer">
+            <div class="title-bar">
+                <span class="title-bar-text">Image Viewer</span>
+                <div class="title-bar-controls">
+                    <button class="control-btn maximize-btn" data-window="generic-image-viewer"
+                        aria-label="Maximize"></button>
+                    <button class="control-btn close-btn" data-window="generic-image-viewer"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <img src="" alt="Viewed Image">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Main Logic -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

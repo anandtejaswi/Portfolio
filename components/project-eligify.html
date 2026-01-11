@@ -1,0 +1,57 @@
+<h2 class="text-2xl font-bold mb-2 text-green-400">Eligify: Secure Exam Eligibility Verification</h2>
+<p class="text-sm text-gray-400 mb-4">Group Project | Web Application Development</p>
+
+<h3 class="text-lg font-bold mt-4 mb-2 border-b border-gray-700 pb-1">The Challenge</h3>
+<p>For many students, answering the simple question "Am I actually eligible for this exam?" is surprisingly complex. Our
+    goal was to solve this confusion, but we didn't just want a basic prototype. The real challenge lay in building a
+    system capable of handling sensitive personal data and verifying scanned documents within a secure, production-ready
+    environment.</p>
+
+<h3 class="text-lg font-bold mt-4 mb-2 border-b border-gray-700 pb-1">Our Solution</h3>
+<p>We engineered a platform that cross-references student data against exam rules to provide accurate results. The
+    system automates document verification, eliminates stored passwords for better privacy, and provides real-time
+    feedback, all while maintaining a hardened security posture against common web vulnerabilities.</p>
+
+<h3 class="text-lg font-bold mt-4 mb-2 border-b border-gray-700 pb-1">Work Distribution & Architecture</h3>
+<ul class="list-disc list-inside space-y-2 mt-2">
+    <li><strong class="text-yellow-300">Secure Backend Architecture:</strong> MVC architecture with Flask Blueprints.
+        Focus on hardening against XSS/SQLi, rate limiting, and secure file validation.</li>
+    <li><strong class="text-yellow-300">Hybrid Document Parsing:</strong> A hybrid engine that reads digital PDFs
+        directly and automates switching to OCR (Tesseract) for scanned images.</li>
+    <li><strong class="text-yellow-300">Identity & Data Integrity:</strong> Google OAuth 2.0 implementation and
+        normalized SQLAlchemy schema for audit trails.</li>
+    <li><strong class="text-yellow-300">Real-Time Feedback:</strong> Client-side MVC with ES6 modules for instant
+        eligibility validation.</li>
+</ul>
+
+<h3 class="text-lg font-bold mt-4 mb-2 border-b border-gray-700 pb-1">Outcome & Reflection</h3>
+<p>This project was a comprehensive exercise in full-stack security and logic integration. By combining robust backend
+    protection with intelligent parsing and a user-friendly interface, we created a tool that makes the complex simple.
+</p>
+
+<div class="mt-4 p-3 bg-gray-800 rounded border border-gray-600">
+    <p><strong class="text-blue-400">Tech Stack:</strong> Python, Flask, Tesseract OCR, Google Identity Services,
+        Tailwind CSS</p>
+    <a href="https://github.com/anandtejaswi/Eligify" target="_blank"
+        class="inline-block mt-2 text-green-300 hover:text-green-100 underline">View Code Repository: GitHub -
+        Eligify</a>
+</div>
+
+<div class="mt-6">
+    <h3 class="text-lg font-bold mb-2 border-b border-gray-700 pb-1">Project Gallery</h3>
+    <div class="project-gallery mt-2 space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+            <img src="images/eligify1.avif" alt="Eligify Dashboard"
+                class="hover:scale-105 transition-transform cursor-pointer"
+                onclick="openImageViewer(this.src, this.alt)">
+            <img src="images/eligify2.avif" alt="Eligify Verification Process"
+                class="hover:scale-105 transition-transform cursor-pointer"
+                onclick="openImageViewer(this.src, this.alt)">
+        </div>
+        <div>
+            <img src="images/eligify3.avif" alt="Eligify Result View"
+                class="hover:scale-105 transition-transform cursor-pointer"
+                onclick="openImageViewer(this.src, this.alt)">
+        </div>
+    </div>
+</div>
