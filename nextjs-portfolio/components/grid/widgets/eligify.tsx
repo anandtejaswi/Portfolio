@@ -14,14 +14,14 @@ export default function Eligify() {
                 alt={projectName}
                 fill
                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-                className='object-cover opacity-80'
+                className='object-cover opacity-100'
                 priority
                 draggable={false}
             />
             <div className='absolute bottom-3 left-3 z-10'>
                 <Anchor
-                    className='cancel-drag size-10 justify-end transition-all ease-in-out group-hover:w-full bg-[#111111] text-white'
-                    href='/projects/eligify_content'
+                    className='cancel-drag size-10 justify-end transition-all ease-in-out group-hover:w-full bg-[#f1f1f1] text-black'
+                    href='/projects/eligify'
                     aria-label={projectName}>
                     <span className='hidden whitespace-nowrap opacity-0 transition-all duration-300 ease-in group-hover:translate-x-0 group-hover:opacity-100 md:inline mr-2'>
                         {projectName}
@@ -31,7 +31,7 @@ export default function Eligify() {
                     </span>
                 </Anchor>
             </div>
-            <div className='absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none' />
+            <div className='absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none' />
             <div className='absolute top-4 left-4 font-bold text-white z-10 text-xl tracking-wider'>Eligify</div>
         </Card>
     );

@@ -17,7 +17,7 @@ export default function TryHackMe({ locked }: { locked?: boolean }) {
             ></iframe>
             <div className='absolute bottom-3 left-3 z-10'>
                 <Anchor
-                    className='cancel-drag size-10 justify-end transition-all ease-in-out group-hover:w-full bg-[#222] text-white'
+                    className='cancel-drag size-10 justify-end transition-all ease-in-out group-hover:w-full bg-[#f1f1f1] text-black'
                     href='https://tryhackme.com/p/anandtejaswi'
                     target='_blank'
                     aria-label='TryHackMe'>

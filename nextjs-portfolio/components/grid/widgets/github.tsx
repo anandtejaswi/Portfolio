@@ -21,7 +21,7 @@ export default function Github({ locked }: { locked?: boolean }) {
             </div>
             <div className='absolute bottom-3 left-3 z-10'>
                 <Anchor
-                    className='cancel-drag size-10 justify-end transition-all ease-in-out group-hover:w-full bg-[#222] text-white'
+                    className='cancel-drag size-10 justify-end transition-all ease-in-out group-hover:w-full bg-[#f1f1f1] text-black'
                     href='https://github.com/anandtejaswi'
                     target='_blank'
                     aria-label='GitHub'>

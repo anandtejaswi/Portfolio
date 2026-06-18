@@ -20,8 +20,8 @@ export default function SolarSwing() {
             />
             <div className='absolute bottom-3 left-3 z-10'>
                 <Anchor
-                    className='cancel-drag size-10 justify-end transition-all ease-in-out group-hover:w-full bg-[#111111] text-white'
-                    href='/projects/solarswing_content'
+                    className='cancel-drag size-10 justify-end transition-all ease-in-out group-hover:w-full bg-[#f1f1f1] text-black'
+                    href='/projects/solarswing'
                     aria-label={projectName}>
                     <span className='hidden whitespace-nowrap opacity-0 transition-all duration-300 ease-in group-hover:translate-x-0 group-hover:opacity-100 md:inline mr-2'>
                         {projectName}
