@@ -1,8 +1,8 @@
 import Container from '@/components/ui/container';
 import Anchor from '@/components/ui/anchor';
 import { FaX } from 'react-icons/fa6';
-import Image from 'next/image';
 import { siteConfig } from '@/config/site';
+import CertCard from './CertCard';
 
 export const metadata = {
     title: `Certifications & Achievements — ${siteConfig.author}`,
@@ -27,67 +27,25 @@ export default function CertificationsPage() {
 
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                         {/* Cert 1 */}
-                        <div className='flex flex-col sm:flex-row items-center sm:items-start gap-6 bg-gray-50 dark:bg-[#111] p-6 rounded-2xl border border-gray-200 dark:border-gray-800 transition-all hover:shadow-lg'>
-                            <div className='shrink-0'>
-                                <Image 
-                                    src='/images/fd_program.png' 
-                                    alt='FD Program' 
-                                    width={140} 
-                                    height={100} 
-                                    className='rounded-xl object-cover shadow-sm' 
-                                />
-                            </div>
-                            <div className='flex flex-col gap-2 text-center sm:text-left'>
-                                <h3 className='font-bold text-xl leading-snug'>
-                                    FD Program on Quantum Computing and Post Quantum Cryptography
-                                </h3>
-                                <p className='text-gray-600 dark:text-gray-400 text-sm'>
-                                    Organized by University of Delhi, CDAC and NIT Patna
-                                </p>
-                            </div>
-                        </div>
+                        <CertCard 
+                            imageSrc='/images/fd_program.png'
+                            title='FD Program on Quantum Computing and Post Quantum Cryptography'
+                            description='Organized by University of Delhi, CDAC and NIT Patna'
+                        />
 
                         {/* Cert 2 */}
-                        <div className='flex flex-col sm:flex-row items-center sm:items-start gap-6 bg-gray-50 dark:bg-[#111] p-6 rounded-2xl border border-gray-200 dark:border-gray-800 transition-all hover:shadow-lg'>
-                            <div className='shrink-0'>
-                                <Image 
-                                    src='/images/anhad.png' 
-                                    alt='GenAI Hackathon' 
-                                    width={140} 
-                                    height={100} 
-                                    className='rounded-xl object-cover shadow-sm' 
-                                />
-                            </div>
-                            <div className='flex flex-col gap-2 text-center sm:text-left'>
-                                <h3 className='font-bold text-xl leading-snug'>
-                                    GenAI Hackathon (Anhad&apos;25) - Team Member
-                                </h3>
-                                <p className='text-gray-600 dark:text-gray-400 text-sm'>
-                                    Organized by IIT Jammu
-                                </p>
-                            </div>
-                        </div>
+                        <CertCard 
+                            imageSrc='/images/anhad.png'
+                            title="GenAI Hackathon (Anhad'25) - Team Member"
+                            description='Organized by IIT Jammu'
+                        />
 
                         {/* Cert 3 */}
-                        <div className='flex flex-col sm:flex-row items-center sm:items-start gap-6 bg-gray-50 dark:bg-[#111] p-6 rounded-2xl border border-gray-200 dark:border-gray-800 transition-all hover:shadow-lg'>
-                            <div className='shrink-0'>
-                                <Image 
-                                    src='/images/ai-war.png' 
-                                    alt='AI-War' 
-                                    width={140} 
-                                    height={100} 
-                                    className='rounded-xl object-cover shadow-sm' 
-                                />
-                            </div>
-                            <div className='flex flex-col gap-2 text-center sm:text-left'>
-                                <h3 className='font-bold text-xl leading-snug'>
-                                    AI-War (3rd Position)
-                                </h3>
-                                <p className='text-gray-600 dark:text-gray-400 text-sm'>
-                                    Organized by IEEE Student Branch, Faculty of Technology, UoD
-                                </p>
-                            </div>
-                        </div>
+                        <CertCard 
+                            imageSrc='/images/ai-war.png'
+                            title='AI-War (3rd Position)'
+                            description='Organized by IEEE Student Branch, Faculty of Technology, UoD'
+                        />
                     </div>
                 </Container>
             </main>
