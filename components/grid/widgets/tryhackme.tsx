@@ -6,7 +6,7 @@ export default function TryHackMe({ locked }: { locked?: boolean }) {
     return (
         <Card className='group relative w-full h-full flex justify-center items-center overflow-hidden bg-gradient-to-br from-[#1b1d24] to-[#111317]'>
             {locked && (
-                <a href="https://tryhackme.com/p/anandtejaswi" target="_blank" rel="noopener noreferrer" className="cancel-drag absolute inset-0 z-20"></a>
+                <a href="https://tryhackme.com/p/anand.tejaswi05" target="_blank" rel="noopener noreferrer" className="cancel-drag absolute inset-0 z-20"></a>
             )}
             <iframe 
                 src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6594237" 
@@ -19,7 +19,7 @@ export default function TryHackMe({ locked }: { locked?: boolean }) {
             <div className='absolute bottom-3 left-3 z-10'>
                 <Anchor
                     className='cancel-drag size-10 justify-end transition-all ease-in-out group-hover:w-full bg-[#f1f1f1] text-black'
-                    href='https://tryhackme.com/p/anandtejaswi'
+                    href='https://tryhackme.com/p/anand.tejaswi05'
                     target='_blank'
                     aria-label='TryHackMe'>
                     <span className='hidden whitespace-nowrap opacity-0 transition-all duration-300 ease-in group-hover:translate-x-0 group-hover:opacity-100 md:inline mr-2'>
