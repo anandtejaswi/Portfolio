@@ -97,8 +97,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang='en' suppressHydrationWarning>
             <head>
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="dns-prefetch" href="https://tryhackme.com" />
+                <link rel="preconnect" href="https://tryhackme.com" crossOrigin="anonymous" />
             </head>
             <body className={cn(poppins.className, pixelifySans.variable, 'dark:bg-dark-950 bg-gray-100 antialiased')}>
                 <Script

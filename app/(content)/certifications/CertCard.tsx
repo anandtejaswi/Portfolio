@@ -42,6 +42,8 @@ export default function CertCard({ imageSrc, title, description }: CertCardProps
                         alt={title} 
                         width={140} 
                         height={100} 
+                        priority
+                        quality={75}
                         className='rounded-xl object-cover shadow-sm transition-transform duration-300 group-hover:scale-105' 
                     />
                 </div>

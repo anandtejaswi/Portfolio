@@ -14,6 +14,7 @@ export default function TryHackMe({ locked }: { locked?: boolean }) {
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-none pointer-events-none scale-[0.9] md:scale-[1.3]"
                 style={{ width: '340px', height: '100px' }}
                 scrolling="no"
+                loading="lazy"
             ></iframe>
             <div className='absolute bottom-3 left-3 z-10'>
                 <Anchor

@@ -19,6 +19,7 @@ export default function Eligify({ locked }: { locked?: boolean }) {
                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                 className='object-cover opacity-100'
                 priority
+                quality={75}
                 draggable={false}
             />
             <div className='absolute bottom-3 left-3 z-10'>

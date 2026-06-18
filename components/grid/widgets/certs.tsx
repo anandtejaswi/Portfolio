@@ -19,6 +19,7 @@ export default function Certs({ locked }: { locked?: boolean }) {
                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                 className='object-cover opacity-70'
                 priority
+                quality={60}
                 draggable='false'
             />
             <div className='absolute bottom-3 left-3 z-10'>

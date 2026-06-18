@@ -55,6 +55,7 @@ export default function Intro() {
                         fill
                         sizes='96px'
                         priority
+                        quality={60}
                         className='object-cover transition-transform duration-500 ease-in-out group-hover:scale-110'
                     />
                 </div>
