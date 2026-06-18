@@ -4,11 +4,14 @@ import Image from 'next/image';
 import Anchor from '../../ui/anchor';
 import { FaArrowRight } from 'react-icons/fa6';
 
-export default function Eligify() {
+export default function Eligify({ locked }: { locked?: boolean }) {
     const projectName = 'Eligify';
 
     return (
         <Card className='group relative bg-[#0e0e0e]'>
+            {locked && (
+                <a href="/projects/eligify" className="cancel-drag absolute inset-0 z-20" aria-label={projectName}></a>
+            )}
             <Image
                 src={projectImage}
                 alt={projectName}

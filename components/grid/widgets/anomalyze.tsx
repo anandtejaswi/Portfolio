@@ -4,11 +4,14 @@ import Image from 'next/image';
 import Anchor from '../../ui/anchor';
 import { FaArrowRight } from 'react-icons/fa6';
 
-export default function Anomalyze() {
+export default function Anomalyze({ locked }: { locked?: boolean }) {
     const projectName = 'Project Anomalyze';
 
     return (
         <Card className='group relative bg-[#101928]'>
+            {locked && (
+                <a href="/projects/anomalyze" className="cancel-drag absolute inset-0 z-20" aria-label={projectName}></a>
+            )}
             <Image
                 src={projectImage}
                 alt={projectName}

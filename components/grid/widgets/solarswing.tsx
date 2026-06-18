@@ -4,11 +4,14 @@ import Image from 'next/image';
 import Anchor from '../../ui/anchor';
 import { FaArrowRight } from 'react-icons/fa6';
 
-export default function SolarSwing() {
+export default function SolarSwing({ locked }: { locked?: boolean }) {
     const projectName = 'Solar Swing';
 
     return (
         <Card className='group relative bg-[#2A4A2A]'>
+            {locked && (
+                <a href="/projects/solarswing" className="cancel-drag absolute inset-0 z-20" aria-label={projectName}></a>
+            )}
             <Image
                 src={projectImage}
                 alt={projectName}
