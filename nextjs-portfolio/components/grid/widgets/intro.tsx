@@ -1,5 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { FaArrowRight } from 'react-icons/fa6';
 
 import profile from '@/public/images/tejaswianand.jpg';
 import Image from 'next/image';
@@ -75,6 +77,11 @@ export default function Intro() {
                 <p className='text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 text-justify'>
                     {DESCRIPTION}
                 </p>
+                <div className='mt-1'>
+                    <Link href="/about" className="cancel-drag inline-flex items-center gap-1.5 text-[14px] font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors group">
+                        Read More <FaArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+                    </Link>
+                </div>
             </div>
 
             {/* Tags */}
