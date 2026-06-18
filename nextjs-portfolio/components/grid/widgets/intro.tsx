@@ -22,7 +22,7 @@ export default function Intro({
     // ── EXPANDED: full-width horizontal layout ──
     if (isExpanded) {
         return (
-            <Card className='relative flex flex-row items-center gap-10 p-10 bg-[#eef4f9] dark:bg-[#1a2430] text-gray-900 dark:text-white overflow-hidden h-full'>
+            <Card className='relative flex flex-row items-center gap-10 p-10 bg-sky-100 dark:bg-[#112a46] text-gray-900 dark:text-white overflow-hidden h-full'>
 
                 {/* Large circular avatar on the left */}
                 <div className='relative shrink-0 w-52 h-52 overflow-hidden rounded-full ring-2 ring-gray-200 dark:ring-white/10'>
@@ -74,7 +74,7 @@ export default function Intro({
 
     // ── COLLAPSED: vertical stacked layout ──
     return (
-        <Card className='relative flex flex-col gap-5 p-7 bg-[#eef4f9] dark:bg-[#1a2430] text-gray-900 dark:text-white overflow-hidden h-full'>
+        <Card className='relative flex flex-col gap-5 p-7 bg-sky-100 dark:bg-[#112a46] text-gray-900 dark:text-white overflow-hidden h-full'>
 
             {/* Small circular avatar */}
             <div className='relative size-16 shrink-0 overflow-hidden rounded-full ring-2 ring-gray-200 dark:ring-white/10'>
