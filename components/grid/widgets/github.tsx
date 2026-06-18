@@ -8,7 +8,7 @@ export default function Github({ locked }: { locked?: boolean }) {
     return (
         <Card className='group relative bg-gradient-to-br from-[#161b22] to-[#0d1117]'>
             {locked && (
-                <a href="https://github.com/anandtejaswi" target="_blank" rel="noopener noreferrer" className="cancel-drag absolute inset-0 z-20"></a>
+                <a href="https://github.com/anandtejaswi" aria-label="View GitHub Profile" target="_blank" rel="noopener noreferrer" className="cancel-drag absolute inset-0 z-20"></a>
             )}
             <div className="relative flex items-center justify-center w-full h-full p-8">
                 <Image

@@ -114,6 +114,7 @@ export default function FilterableGrid() {
                 {/* Contact link */}
                 <a
                     href='mailto:anand.tejaswi05@gmail.com'
+                    aria-label='Email Contact'
                     className='group flex items-center gap-1 px-2 md:px-3 py-1.5 text-xs md:text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors rounded-full'
                 >
                     <span className="hidden xs:inline">Contact</span>

@@ -8,7 +8,7 @@ export default function Resume({ locked }: { locked?: boolean }) {
     return (
         <Card className='group relative bg-[#f7f0e6] dark:bg-[#2c2216]'>
             {locked && (
-                <a href="/images/resume.pdf" target="_blank" rel="noopener noreferrer" className="cancel-drag absolute inset-0 z-20"></a>
+                <a href="/images/resume.pdf" aria-label="View Resume PDF" target="_blank" rel="noopener noreferrer" className="cancel-drag absolute inset-0 z-20"></a>
             )}
             <div className="relative flex items-center justify-center w-full h-full p-8">
                 <Image

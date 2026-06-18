@@ -6,7 +6,7 @@ export default function TryHackMe({ locked }: { locked?: boolean }) {
     return (
         <Card className='group relative w-full h-full flex justify-center items-center overflow-hidden bg-gradient-to-br from-[#1b1d24] to-[#111317]'>
             {locked && (
-                <a href="https://tryhackme.com/p/anand.tejaswi05" target="_blank" rel="noopener noreferrer" className="cancel-drag absolute inset-0 z-20"></a>
+                <a href="https://tryhackme.com/p/anand.tejaswi05" aria-label="View TryHackMe Profile" target="_blank" rel="noopener noreferrer" className="cancel-drag absolute inset-0 z-20"></a>
             )}
             <iframe 
                 src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6594237" 
