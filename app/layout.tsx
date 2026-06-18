@@ -1,7 +1,6 @@
 import { siteConfig } from '@/config/site';
 import { pixelifySans, poppins } from '@/utils/fonts';
 import { cn } from '@/utils/lib';
-import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { ThemeProvider } from './providers';
 import Script from 'next/script';
@@ -109,7 +108,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <ThemeProvider attribute='class' enableSystem={false}>
                     {children}
                 </ThemeProvider>
-                <Analytics />
             </body>
         </html>
     );
