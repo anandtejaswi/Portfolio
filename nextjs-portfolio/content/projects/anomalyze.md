@@ -3,7 +3,7 @@ title: Project Anomalyze
 description: An AI-powered cybersecurity system detecting network anomalies in real-time to ease the day-to-day work of a SOC analyst.
 stack: ["AI/ML", "Python", "Cybersecurity", "Scikit-learn"]
 github: https://github.com/anandtejaswi
-images: [{"i":"img-1","url":"/images/Project_Anomalyze_1.png"},{"i":"img-2","url":"/images/Project_Anomalyze_2.png"},{"i":"img-3","url":"/images/Project_Anomalyze_3.png"}]
+images: [{"i":"img-1","url":"/images/Project_Anomalyze_1.jpg"},{"i":"img-2","url":"/images/Project_Anomalyze_2.jpg"},{"i":"img-3","url":"/images/Project_Anomalyze_3.jpg"}]
 links: [{"name": "Repository", "url": "https://github.com/anandtejaswi"}]
 ---
 

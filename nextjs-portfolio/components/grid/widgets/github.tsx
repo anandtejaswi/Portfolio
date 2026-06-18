@@ -1,4 +1,4 @@
-import githubIcon from '@/public/images/github-icon.png';
+import githubIcon from '@/public/images/github-icon.jpg';
 import Card from '../../ui/card';
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa6';

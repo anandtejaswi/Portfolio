@@ -3,7 +3,7 @@ title: Eligify
 description: A secure exam eligibility verification system with hybrid document parsing that automates student data cross-referencing against exam rules.
 stack: ["Flask", "Python", "OCR", "Security"]
 github: https://github.com/anandtejaswi/Eligify
-images: [{"i":"img-1","url":"/images/eligify1.png"},{"i":"img-2","url":"/images/eligify2.png"},{"i":"img-3","url":"/images/eligify3.png"}]
+images: [{"i":"img-1","url":"/images/eligify1.jpg"},{"i":"img-2","url":"/images/eligify2.jpg"},{"i":"img-3","url":"/images/eligify3.jpg"}]
 links: [{"name": "Repository", "url": "https://github.com/anandtejaswi/Eligify"}]
 ---
 

@@ -3,7 +3,7 @@ title: Solar Swing
 description: A non-electrical solar tracking system using thermal expansion to maximize solar panel efficiency by up to 50%.
 stack: ["Raspberry Pi", "IoT", "Renewable Energy", "Python"]
 github: https://github.com/anandtejaswi
-images: [{"i":"img-1","url":"/images/solar_swing_1.png"},{"i":"img-2","url":"/images/solar_swing_2.png"}]
+images: [{"i":"img-1","url":"/images/solar_swing_1.jpg"},{"i":"img-2","url":"/images/solar_swing_2.jpg"}]
 links: [{"name": "Repository", "url": "https://github.com/anandtejaswi"}]
 ---
 

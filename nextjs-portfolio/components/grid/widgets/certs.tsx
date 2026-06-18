@@ -34,7 +34,7 @@ export default function Certs({ locked }: { locked?: boolean }) {
                     </span>
                 </Anchor>
             </div>
-            <div className="absolute top-4 left-4 font-bold text-white z-10 text-xl tracking-wider pointer-events-none">Certifications</div>
+            <div className="absolute top-4 left-4 font-bold text-white z-10 text-base tracking-wider pointer-events-none">Certifications</div>
         </Card>
     );
 }

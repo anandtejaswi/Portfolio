@@ -11,7 +11,7 @@ export default function TryHackMe({ locked }: { locked?: boolean }) {
             <iframe 
                 src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6594237" 
                 title="TryHackMe Badge"
-                className="border-none pointer-events-none scale-[1.3]"
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-none pointer-events-none scale-[0.9] md:scale-[1.3]"
                 style={{ width: '340px', height: '100px' }}
                 scrolling="no"
             ></iframe>

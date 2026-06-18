@@ -1,4 +1,4 @@
-import projectImage from '@/public/images/Project_Anomalyze_1.png';
+import projectImage from '@/public/images/Project_Anomalyze_1.jpg';
 import Card from '../../ui/card';
 import Image from 'next/image';
 import Anchor from '../../ui/anchor';

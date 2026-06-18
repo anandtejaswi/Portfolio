@@ -28,21 +28,21 @@ export default function CertificationsPage() {
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                         {/* Cert 1 */}
                         <CertCard 
-                            imageSrc='/images/fd_program.png'
+                            imageSrc='/images/fd_program.jpg'
                             title='FD Program on Quantum Computing and Post Quantum Cryptography'
                             description='Organized by University of Delhi, CDAC and NIT Patna'
                         />
 
                         {/* Cert 2 */}
                         <CertCard 
-                            imageSrc='/images/anhad.png'
+                            imageSrc='/images/anhad.jpg'
                             title="GenAI Hackathon (Anhad'25) - Team Member"
                             description='Organized by IIT Jammu'
                         />
 
                         {/* Cert 3 */}
                         <CertCard 
-                            imageSrc='/images/ai-war.png'
+                            imageSrc='/images/ai-war.jpg'
                             title='AI-War (3rd Position)'
                             description='Organized by IEEE Student Branch, Faculty of Technology, UoD'
                         />
