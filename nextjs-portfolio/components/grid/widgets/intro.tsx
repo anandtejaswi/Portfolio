@@ -1,6 +1,6 @@
 'use client';
 
-import profile from '@/public/images/tejaswianand.png';
+import profile from '@/public/images/tejaswianand.jpg';
 import Image from 'next/image';
 import Card from '../../ui/card';
 import { siteConfig } from '@/config/site';
@@ -32,7 +32,7 @@ export default function Intro({
                         fill
                         sizes='220px'
                         priority
-                        className='object-cover grayscale'
+                        className='object-cover'
                     />
                 </div>
 
@@ -84,7 +84,7 @@ export default function Intro({
                     fill
                     sizes='72px'
                     priority
-                    className='object-cover grayscale'
+                    className='object-cover'
                 />
             </div>
 
