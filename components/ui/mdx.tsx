@@ -37,8 +37,14 @@ function RoundedImage({ ...props }) {
 }
 
 function createHeading(level: number) {
-    const Heading = ({ children }: { children: string }) => {
-        let slug = toKebabCase(children);
+    const Heading = ({ children }: { children: React.ReactNode }) => {
+        // children can be a string or complex React nodes (e.g. bold inside heading)
+        const textContent = typeof children === 'string'
+            ? children
+            : Array.isArray(children)
+                ? children.map(c => (typeof c === 'string' ? c : (c as any)?.props?.children ?? '')).join('')
+                : (children as any)?.props?.children ?? String(children ?? '');
+        const slug = toKebabCase(textContent);
         return createElement(
             `h${level}`,
             { id: slug },
