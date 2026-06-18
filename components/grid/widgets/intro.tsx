@@ -51,7 +51,7 @@ export default function Intro() {
                 <div className='cancel-drag group relative size-24 shrink-0 overflow-hidden rounded-full ring-2 ring-gray-200 dark:ring-white/10'>
                     <Image
                         src={profile}
-                        alt={siteConfig.title}
+                        alt='Tejaswi Anand — Cybersecurity Engineer and B.Tech Computer Engineering student at Delhi University'
                         fill
                         sizes='96px'
                         priority

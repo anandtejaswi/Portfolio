@@ -3,17 +3,27 @@ import { getAllProjects } from '@/utils/mdx';
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const routes = [''].map((route) => ({
-        url: `${siteConfig.url}${route}`,
+    const staticRoutes: MetadataRoute.Sitemap = [
+        {
+            url: siteConfig.url,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 1.0,
+        },
+        {
+            url: `${siteConfig.url}/certifications`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+    ];
+
+    const projects: MetadataRoute.Sitemap = getAllProjects().map((project) => ({
+        url: `${siteConfig.url}/projects/${project.slug}`,
         lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.9,
     }));
 
-
-
-    const projects = getAllProjects().map((projects) => ({
-        url: `${siteConfig.url}/projects/${projects.slug}`,
-        lastModified: new Date(),
-    }));
-
-    return [...routes, ...projects];
+    return [...staticRoutes, ...projects];
 }

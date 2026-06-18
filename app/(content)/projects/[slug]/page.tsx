@@ -17,15 +17,28 @@ export const generateMetadata = async ({ params }: { params: Params }) => {
     const project = getAllProjects().find((project) => project.slug === slug);
     if (!project) return;
     const { title, description } = project.metadata;
+    const stack: string[] = (project.metadata as any).stack ? JSON.parse((project.metadata as any).stack) : [];
     return {
-        title: `${title} — Projects`,
+        title: `${title} — Project`,
         description,
+        keywords: [...stack, 'Tejaswi Anand', 'portfolio project', title],
+        authors: [{ name: siteConfig.author, url: siteConfig.url }],
         openGraph: {
-            title, description, type: 'article',
+            title: `${title} — Tejaswi Anand`,
+            description,
+            type: 'article',
             url: `${siteConfig.url}/projects/${project.slug}`,
-            authors: siteConfig.author, images: siteConfig.ogImage,
+            authors: [siteConfig.author],
+            images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: `${title} — Tejaswi Anand` }],
+            publishedTime: new Date().toISOString(),
         },
-        twitter: { title, description, images: siteConfig.ogImage },
+        twitter: {
+            card: 'summary_large_image',
+            title: `${title} — Tejaswi Anand`,
+            description,
+            creator: siteConfig.twitterHandle,
+            images: [{ url: siteConfig.ogImage, alt: `${title} — Tejaswi Anand` }],
+        },
         alternates: { canonical: `${siteConfig.url}/projects/${project.slug}` },
     };
 };
@@ -35,14 +48,6 @@ const ProjectPage = async ({ params }: { params: Params }) => {
     const project = getAllProjects().find((project) => project.slug === slug);
     if (!project) notFound();
 
-    const jsonLd = {
-        '@context': 'https://schema.org',
-        '@type': 'Article',
-        headline: project.metadata.title,
-        description: project.metadata.description,
-        author: [{ '@type': 'Person', name: siteConfig.author, url: siteConfig.url }],
-    };
-
     const links: { name: string; url: string }[] = project.metadata.links
         ? JSON.parse(project.metadata.links) : [];
 
@@ -51,6 +56,20 @@ const ProjectPage = async ({ params }: { params: Params }) => {
 
     const stack: string[] = (project.metadata as any).stack
         ? JSON.parse((project.metadata as any).stack) : [];
+
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareSourceCode',
+        name: project.metadata.title,
+        description: project.metadata.description,
+        url: `${siteConfig.url}/projects/${project.slug}`,
+        author: [{ '@type': 'Person', name: siteConfig.author, url: siteConfig.url }],
+        programmingLanguage: stack,
+        codeRepository: links.find(l => l.name === 'Repository')?.url,
+        thumbnailUrl: siteConfig.ogImage,
+        datePublished: new Date().toISOString().split('T')[0],
+        keywords: stack.join(', '),
+    };
 
     return (
         <>
