@@ -79,8 +79,8 @@ export default function Intro() {
                     {DESCRIPTION}
                 </p>
                 <div className='mt-1'>
-                    <Link href="/about" className="cancel-drag inline-flex items-center gap-1.5 text-[14px] font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors group">
-                        Read More <FaArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+                    <Link href="/about" aria-label="Read more about Tejaswi Anand" title="Read more about Tejaswi Anand" className="cancel-drag inline-flex items-center gap-1.5 text-[14px] font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors group">
+                        Read more about me <FaArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                     </Link>
                 </div>
             </div>
