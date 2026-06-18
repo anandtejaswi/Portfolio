@@ -11,7 +11,13 @@ import { FaArrowRight } from 'react-icons/fa6';
 
 export default function FilterableGrid() {
     const [filter, setFilter] = useState<'all' | 'about' | 'projects'>('all');
-    const [locked, setLocked] = useState(false);
+    // Default locked=true on mobile (touch) devices
+    const [locked, setLocked] = useState(() => {
+        if (typeof window !== 'undefined') {
+            return window.innerWidth < 800;
+        }
+        return false;
+    });
     const [introExpanded, setIntroExpanded] = useState(false);
     const { resolvedTheme, setTheme } = useTheme();
 
