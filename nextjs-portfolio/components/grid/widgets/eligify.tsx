@@ -31,8 +31,8 @@ export default function Eligify() {
                     </span>
                 </Anchor>
             </div>
-            <div className='absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none' />
-            <div className='absolute top-4 left-4 font-bold text-white z-10 text-xl tracking-wider'>Eligify</div>
+            <div className='absolute inset-0 pointer-events-none dark:bg-black/40' />
+            <div className='absolute top-4 left-4 font-bold text-black dark:text-white z-10 text-xl tracking-wider'>Eligify</div>
         </Card>
     );
 }

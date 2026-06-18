@@ -1,4 +1,4 @@
-import projectImage from '@/public/images/solar_swing_1.png';
+import projectImage from '@/public/images/Solar-Swing-Card.jpg';
 import Card from '../../ui/card';
 import Image from 'next/image';
 import Anchor from '../../ui/anchor';
@@ -14,7 +14,7 @@ export default function SolarSwing() {
                 alt={projectName}
                 fill
                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-                className='object-cover opacity-60 mix-blend-overlay'
+                className='object-cover opacity-100'
                 priority
                 draggable={false}
             />
@@ -31,7 +31,8 @@ export default function SolarSwing() {
                     </span>
                 </Anchor>
             </div>
-            <div className='absolute top-4 left-4 font-bold text-white z-10 text-xl tracking-wider'>Solar Swing</div>
+            <div className='absolute inset-0 pointer-events-none dark:bg-black/40' />
+            <div className='absolute top-4 left-4 font-bold text-black dark:text-white z-10 text-xl tracking-wider'>Solar Swing</div>
         </Card>
     );
 }
