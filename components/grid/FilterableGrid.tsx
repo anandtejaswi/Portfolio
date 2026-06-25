@@ -7,7 +7,7 @@ import GridItem from '@/components/grid/item';
 import { gridItems, layouts as initialLayouts } from '@/config/grid';
 import { FaLock, FaLockOpen } from 'react-icons/fa6';
 import { FiSun, FiMoon } from 'react-icons/fi';
-import { FaArrowRight } from 'react-icons/fa6';
+import { FaEnvelope } from 'react-icons/fa6';
 
 export default function FilterableGrid() {
     const [filter, setFilter] = useState<'all' | 'about' | 'projects'>('all');
@@ -116,11 +116,11 @@ export default function FilterableGrid() {
                 <a
                     href='mailto:anand.tejaswi05@gmail.com'
                     title='Email Contact'
-                    className='group flex items-center gap-1 px-2 md:px-3 py-1.5 text-xs md:text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors rounded-full'
+                    className='group flex items-center gap-1.5 px-2 md:px-3 py-1.5 text-xs md:text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors rounded-full'
                 >
                     <span className="sr-only">Email Contact</span>
-                    <span className="hidden xs:inline" aria-hidden="true">Contact</span>
-                    <FaArrowRight className='w-3 h-3 -rotate-45 transition-transform duration-300 group-hover:rotate-0' aria-hidden="true" />
+                    <FaEnvelope className='w-3.5 h-3.5' aria-hidden="true" />
+                    <span className="hidden xs:inline" aria-hidden="true">Email</span>
                 </a>
             </nav>
 
