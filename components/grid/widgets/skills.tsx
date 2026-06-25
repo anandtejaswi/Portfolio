@@ -4,15 +4,15 @@ export default function Skills() {
     const categories = [
         {
             title: 'Languages',
-            skills: ['C', 'Python', 'HTML5', 'CSS3']
+            skills: ['C', 'Python', 'HTML5', 'CSS3', 'SQL']
         },
         {
             title: 'Tools',
-            skills: ['Git', 'GitHub', 'Django']
+            skills: ['Git & GitHub', 'Docker', 'Redis', 'Netlify', 'Cloudflare', 'VS Code', 'NMap', 'Wireshark', 'Cisco Packet Tracer', 'Figma']
         },
         {
             title: 'Methodologies',
-            skills: ['UI/UX Design', 'Prompt Engineering', 'Encryption Algos']
+            skills: ['Network Security', 'Cryptography', 'Data Structures & Algorithms', 'DBMS', 'System Design']
         }
     ];
 
