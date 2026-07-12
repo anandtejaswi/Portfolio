@@ -1,4 +1,4 @@
-# Tejaswi Anand - Portfolio
+# Tejaswi Anand: Portfolio
 
 Personal portfolio website for showcasing projects, certifications, and technical writing. 
 
@@ -44,3 +44,4 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 - `content/`: Markdown files for project descriptions
 - `config/`: Configuration for layouts and site metadata
 - `public/`: Static files like images and documents
+
