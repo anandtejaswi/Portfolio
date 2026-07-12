@@ -1,4 +1,4 @@
-# Tejaswi Anand: Portfolio
+# Tejaswi Anand Portfolio
 
 Personal portfolio website for showcasing projects, certifications, and technical writing. 
 
