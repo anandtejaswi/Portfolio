@@ -3,6 +3,7 @@ import { pixelifySans, poppins } from '@/utils/fonts';
 import { cn } from '@/utils/lib';
 import type { Metadata } from 'next';
 import { ThemeProvider } from './providers';
+import { Analytics } from './analytics';
 import Script from 'next/script';
 
 import 'react-grid-layout/css/styles.css';
@@ -96,6 +97,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang='en' suppressHydrationWarning>
             <head>
+                <Analytics />
                 <link rel="preconnect" href="https://tryhackme.com" crossOrigin="anonymous" />
             </head>
             <body className={cn(poppins.className, pixelifySans.variable, 'dark:bg-dark-950 bg-gray-100 antialiased')}>
