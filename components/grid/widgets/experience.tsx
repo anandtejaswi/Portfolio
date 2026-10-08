@@ -13,14 +13,16 @@ interface ExperienceEntry {
 
 const EXPERIENCES: ExperienceEntry[] = [
     {
-        role: 'Security & Frontend Intern',
+        role: 'Software Engineer Intern',
         org: 'Nowlez: AI Munshi',
         period: 'Jul 2026 — Present',
         points: [
-            'Re-designed and unified the entire authentication flow by configuring Supabase to manage Email + OTP, Phone + OTP, and Google OAuth.',
-            'Optimized the frontend and landing page to a 97 Lighthouse score, up from 65.',
-            'Configured Google Analytics and Hotjar for user-journey tracking.',
-            'Designing and developing e-court tools, skills, and agentic AI workflows with the LangChain SDK, plus Docker-based sandboxes for the agents.'
+            'Re-designed and unified authentication by migrating fragmented Email/Phone + OTP/Password and Google OAuth flows to Supabase Auth and PostgreSQL, centralizing session management and enforcing dual verification.',
+            'Engineered a secure, ephemeral sandbox-based backend enabling the AI assistant to autonomously execute scripts to generate, edit, and convert legal documents using Gemini models.',
+            'Architected an asynchronous background research subagent that executes long-running tasks on isolated worker slots and triggers webhook wake-ups to the main orchestrator, ensuring zero UI blocking.',
+            'Built the core delivery infrastructure connecting a self-deployed LangGraph Agent Server to the client via webhooks, processing real-time chat events and Human-in-the-Loop (HITL) confirmations.',
+            'Configured a multi-IP request-routing architecture across 6 public IPs on a VPS to bypass strict per-IP rate constraints, increasing e-Courts API throughput by 6×.',
+            'Integrated the assistant-ui React library for multi-turn chat state management, and optimized the landing page to a "97" Lighthouse score alongside GA4/Hotjar integration.'
         ]
     },
     {
