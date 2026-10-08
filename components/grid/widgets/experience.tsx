@@ -41,7 +41,7 @@ const EXPERIENCES: ExperienceEntry[] = [
 
 export default function Experience() {
     return (
-        <Card className='group flex flex-col bg-[#eaf9ee] dark:bg-[#0f2818] h-full border border-black/5 dark:border-white/5 p-0'>
+        <Card className='group flex flex-col bg-[#eaf9ee] dark:bg-[#0f2818] [--scrollbar-bg:#eaf9ee] dark:[--scrollbar-bg:#0f2818] h-full border border-black/5 dark:border-white/5 p-0'>
             <div className='flex flex-col gap-6 px-8 py-5 my-[2.5%] flex-1 min-h-0 overflow-y-auto custom-scrollbar'>
                 <div>
                     <p className='text-sm text-gray-400 dark:text-gray-500 mb-1'>My journey so far</p>

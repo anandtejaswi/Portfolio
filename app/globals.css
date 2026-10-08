@@ -120,6 +120,13 @@ div[mapboxgl-children] {
 }
 
 /* Custom Scrollbar - Blends into background when not hovered */
+:root {
+    --scrollbar-bg: #eaf9ee;
+}
+html.dark {
+    --scrollbar-bg: #0f2818;
+}
+
 .custom-scrollbar::-webkit-scrollbar {
     width: 4px;
     height: 4px;
@@ -127,19 +134,12 @@ div[mapboxgl-children] {
 
 .custom-scrollbar::-webkit-scrollbar-track {
     margin-block: 8px;
+    background-color: var(--scrollbar-bg);
 }
 
-/* Default state: blend with light mode bg #eaf9ee */
-.custom-scrollbar::-webkit-scrollbar-track,
 .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #eaf9ee;
+    background-color: var(--scrollbar-bg);
     border-radius: 10px;
-}
-
-/* Default state: blend with dark mode bg #0f2818 */
-html.dark .custom-scrollbar::-webkit-scrollbar-track,
-html.dark .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #0f2818;
 }
 
 /* Hover state on container or parent card: show thumb */
@@ -167,11 +167,7 @@ html.dark .group:hover .custom-scrollbar::-webkit-scrollbar-thumb:hover {
 /* Firefox / Standard Scrollbar Support */
 .custom-scrollbar {
     scrollbar-width: thin;
-    scrollbar-color: #eaf9ee #eaf9ee;
-}
-
-html.dark .custom-scrollbar {
-    scrollbar-color: #0f2818 #0f2818;
+    scrollbar-color: var(--scrollbar-bg) var(--scrollbar-bg);
 }
 
 .custom-scrollbar:hover,
