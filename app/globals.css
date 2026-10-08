@@ -118,3 +118,68 @@ div[mapboxgl-children] {
 .prose *:hover > .anchor {
     @apply visible;
 }
+
+/* Custom Scrollbar - Blends into background when not hovered */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    margin-block: 8px;
+}
+
+/* Default state: blend with light mode bg #eaf9ee */
+.custom-scrollbar::-webkit-scrollbar-track,
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #eaf9ee;
+    border-radius: 10px;
+}
+
+/* Default state: blend with dark mode bg #0f2818 */
+html.dark .custom-scrollbar::-webkit-scrollbar-track,
+html.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #0f2818;
+}
+
+/* Hover state on container or parent card: show thumb */
+.custom-scrollbar:hover::-webkit-scrollbar-thumb,
+.group:hover .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+html.dark .custom-scrollbar:hover::-webkit-scrollbar-thumb,
+html.dark .group:hover .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Hover state on thumb itself: darker */
+.custom-scrollbar:hover::-webkit-scrollbar-thumb:hover,
+.group:hover .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+html.dark .custom-scrollbar:hover::-webkit-scrollbar-thumb:hover,
+html.dark .group:hover .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Firefox / Standard Scrollbar Support */
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #eaf9ee #eaf9ee;
+}
+
+html.dark .custom-scrollbar {
+    scrollbar-color: #0f2818 #0f2818;
+}
+
+.custom-scrollbar:hover,
+.group:hover .custom-scrollbar {
+    scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+}
+
+html.dark .custom-scrollbar:hover,
+html.dark .group:hover .custom-scrollbar {
+    scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
