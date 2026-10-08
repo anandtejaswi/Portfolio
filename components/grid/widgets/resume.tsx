@@ -8,7 +8,7 @@ export default function Resume({ locked }: { locked?: boolean }) {
     return (
         <Card locked={locked} className='group relative bg-[#f7f0e6] dark:bg-[#2c2216]'>
             {locked && (
-                <a href="/images/resume.pdf" aria-label="View Resume PDF" target="_blank" rel="noopener noreferrer" className="cancel-drag absolute inset-0 z-20"></a>
+                <a href="/resume.pdf" aria-label="View Resume PDF" target="_blank" rel="noopener noreferrer" className="cancel-drag absolute inset-0 z-20"></a>
             )}
             <div className="relative flex items-center justify-center w-full h-full p-8">
                 <Image
@@ -21,7 +21,7 @@ export default function Resume({ locked }: { locked?: boolean }) {
             <div className='absolute bottom-3 left-3 z-10'>
                 <Anchor
                     className='cancel-drag size-10 justify-end transition-all ease-in-out group-hover:w-full bg-[#e6dccb] dark:bg-[#3d3122] text-black dark:text-white'
-                    href='/images/resume.pdf'
+                    href='/resume.pdf'
                     target='_blank'
                     aria-label='Resume'>
                     <span className='hidden whitespace-nowrap opacity-0 transition-all duration-300 ease-in group-hover:translate-x-0 group-hover:opacity-100 md:inline mr-2'>
