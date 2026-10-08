@@ -4,15 +4,19 @@ export default function Skills() {
     const categories = [
         {
             title: 'Languages',
-            skills: ['C', 'Python', 'HTML5', 'CSS3', 'SQL']
+            skills: ['Python', 'JavaScript', 'C', 'SQL', 'HTML/CSS', 'Powershell Scripts']
         },
         {
-            title: 'Tools',
-            skills: ['Git & GitHub', 'Docker', 'Redis', 'Netlify', 'Cloudflare', 'VS Code', 'NMap', 'Wireshark', 'Cisco Packet Tracer', 'Figma']
+            title: 'Technologies & Frameworks',
+            skills: ['LangChain', 'LangGraph', 'LLM APIs', 'FastAPI', 'Flask', 'React', 'PostgreSQL', 'Supabase', 'PyTorch', 'OpenCV', 'Tesseract OCR']
         },
         {
-            title: 'Methodologies',
-            skills: ['Network Security', 'Cryptography', 'Data Structures & Algorithms', 'DBMS', 'System Design']
+            title: 'Tools & Platforms',
+            skills: ['Git & GitHub', 'Docker', 'AWS', 'DigitalOcean', 'Linux', 'WSL', 'Redis', 'VS Code']
+        },
+        {
+            title: 'Core Concepts',
+            skills: ['AI Apps & Agents', 'Context Chunking & RAG', 'Transformers', 'LLM Evals', 'Cybersecurity', 'Cryptography', 'Data Structures & Algorithms', 'DBMS', 'Networking', 'Operating Systems']
         }
     ];
 
