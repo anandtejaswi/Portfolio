@@ -8,7 +8,7 @@ export default function Anomalyze({ locked }: { locked?: boolean }) {
     const projectName = 'Project Anomalyze';
 
     return (
-        <Card className='group relative bg-[#101928]'>
+        <Card locked={locked} className='group relative bg-[#101928]'>
             {locked && (
                 <a href="/projects/anomalyze" className="cancel-drag absolute inset-0 z-20" aria-label={projectName}></a>
             )}

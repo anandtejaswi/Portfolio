@@ -8,7 +8,7 @@ export default function SolarSwing({ locked }: { locked?: boolean }) {
     const projectName = 'Solar Swing';
 
     return (
-        <Card className='group relative bg-[#2A4A2A]'>
+        <Card locked={locked} className='group relative bg-[#2A4A2A]'>
             {locked && (
                 <a href="/projects/solarswing" className="cancel-drag absolute inset-0 z-20" aria-label={projectName}></a>
             )}

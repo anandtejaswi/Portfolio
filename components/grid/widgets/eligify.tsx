@@ -8,7 +8,7 @@ export default function Eligify({ locked }: { locked?: boolean }) {
     const projectName = 'Eligify';
 
     return (
-        <Card className='group relative bg-[#0e0e0e]'>
+        <Card locked={locked} className='group relative bg-[#0e0e0e]'>
             {locked && (
                 <a href="/projects/eligify" className="cancel-drag absolute inset-0 z-20" aria-label={projectName}></a>
             )}

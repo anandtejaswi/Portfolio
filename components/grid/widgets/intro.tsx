@@ -48,9 +48,9 @@ function RoleRotator() {
     );
 }
 
-export default function Intro() {
+export default function Intro({ locked }: { locked?: boolean }) {
     return (
-        <Card className='relative flex flex-col gap-5 p-7 bg-sky-100 dark:bg-[#112a46] text-gray-900 dark:text-white h-full'>
+        <Card locked={locked} className='relative flex flex-col gap-5 p-7 bg-sky-100 dark:bg-[#112a46] text-gray-900 dark:text-white h-full'>
             <div className='flex flex-row items-center gap-4 shrink-0'>
                 {/* Circular avatar */}
                 <div className='cancel-drag group relative size-24 shrink-0 overflow-hidden rounded-full ring-2 ring-gray-200 dark:ring-white/10'>

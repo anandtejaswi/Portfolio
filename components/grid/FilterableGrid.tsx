@@ -1,26 +1,19 @@
 'use client';
 
 import { useMemo, useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
+// import { useTheme } from 'next-themes'; // temporarily disabled with theme toggle
+// import { FiSun, FiMoon } from 'react-icons/fi'; // temporarily disabled with theme toggle
 import GridLayout from '@/components/grid/layout';
 import GridItem from '@/components/grid/item';
 import { gridItems, layouts as initialLayouts } from '@/config/grid';
 import { FaLock, FaLockOpen } from 'react-icons/fa6';
-import { FiSun, FiMoon } from 'react-icons/fi';
 import { FaEnvelope } from 'react-icons/fa6';
 
 export default function FilterableGrid() {
     const [filter, setFilter] = useState<'all' | 'about' | 'projects'>('all');
-    const [locked, setLocked] = useState(false);
-
-    // Default locked=true on mobile (touch) devices after mount to prevent hydration error
-    useEffect(() => {
-        if (typeof window !== 'undefined' && window.innerWidth < 800) {
-            setLocked(true);
-        }
-    }, []);
+    const [locked, setLocked] = useState(true);
     const [introExpanded, setIntroExpanded] = useState(false);
-    const { resolvedTheme, setTheme } = useTheme();
+    // const { resolvedTheme, setTheme } = useTheme(); // temporarily disabled with theme toggle
 
     // Toggle a class on <body> so our CSS cursor override always wins
     useEffect(() => {
@@ -95,10 +88,10 @@ export default function FilterableGrid() {
                 </button>
 
                 {/* Divider */}
-                <span className='w-px h-4 md:h-5 bg-gray-200 dark:bg-gray-700 mx-0.5 md:mx-1' />
+                {/* <span className='w-px h-4 md:h-5 bg-gray-200 dark:bg-gray-700 mx-0.5 md:mx-1' /> */}
 
-                {/* Dark / Light mode toggle */}
-                <button
+                {/* Dark / Light mode toggle — temporarily disabled */}
+                {/* <button
                     onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
                     className='flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors'
                     aria-label='Toggle theme'
@@ -107,7 +100,7 @@ export default function FilterableGrid() {
                         ? <FiSun className='w-3.5 h-3.5 md:w-4 md:h-4 text-yellow-400' />
                         : <FiMoon className='w-3.5 h-3.5 md:w-4 md:h-4 text-gray-600' />
                     }
-                </button>
+                </button> */}
 
                 {/* Divider */}
                 <span className='w-px h-4 md:h-5 bg-gray-200 dark:bg-gray-700 mx-0.5 md:mx-1' />

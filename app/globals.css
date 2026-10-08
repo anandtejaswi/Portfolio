@@ -87,10 +87,18 @@
     }
 }
 
-/* Locked grid — force default cursor on all grid items, overriding react-draggable inline styles */
+/* Locked grid — allow text selection and text cursor everywhere */
 body.layout-locked .react-grid-item,
-body.layout-locked .react-grid-item *:not(a):not(button) {
+body.layout-locked .react-grid-item * {
+    user-select: text !important;
+    -webkit-user-select: text !important;
     cursor: default !important;
+}
+
+/* Keep pointer cursor on interactive elements */
+body.layout-locked .react-grid-item a,
+body.layout-locked .react-grid-item button {
+    cursor: pointer !important;
 }
 
 /* Mapbox */

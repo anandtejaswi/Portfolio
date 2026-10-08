@@ -6,7 +6,7 @@ import Anchor from '../../ui/anchor';
 
 export default function Github({ locked }: { locked?: boolean }) {
     return (
-        <Card className='group relative bg-gradient-to-br from-[#161b22] to-[#0d1117]'>
+        <Card locked={locked} className='group relative bg-gradient-to-br from-[#161b22] to-[#0d1117]'>
             {locked && (
                 <a href="https://github.com/anandtejaswi" aria-label="View GitHub Profile" target="_blank" rel="noopener noreferrer" className="cancel-drag absolute inset-0 z-20"></a>
             )}

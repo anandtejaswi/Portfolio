@@ -1,9 +1,9 @@
 import { FaArrowRight } from 'react-icons/fa6';
 import Card from '../../ui/card';
 
-export default function Contact() {
+export default function Contact({ locked }: { locked?: boolean }) {
     return (
-        <Card className='flex flex-col justify-center gap-2 md:gap-3 p-3 min-[380px]:p-4 sm:p-6 md:p-8 bg-pink-100 text-pink-950 dark:bg-[#3d1a29] dark:text-pink-100 shadow-sm'>
+        <Card locked={locked} className='flex flex-col justify-center gap-2 md:gap-3 p-3 min-[380px]:p-4 sm:p-6 md:p-8 bg-pink-100 text-pink-950 dark:bg-[#3d1a29] dark:text-pink-100 shadow-sm'>
             <h2 className='font-bold text-[11px] min-[380px]:text-[13px] sm:text-[15px] md:text-base whitespace-nowrap leading-snug tracking-tight'>Let's build something</h2>
             <div className='flex flex-col gap-1.5 md:gap-2 mt-1'>
                 <a

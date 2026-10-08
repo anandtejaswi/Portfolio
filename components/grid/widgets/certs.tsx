@@ -8,7 +8,7 @@ export default function Certs({ locked }: { locked?: boolean }) {
     const projectName = 'Certifications';
 
     return (
-        <Card className='group relative bg-[#111111]'>
+        <Card locked={locked} className='group relative bg-[#111111]'>
             {locked && (
                 <a href="/certifications" aria-label="View Certifications" className="cancel-drag absolute inset-0 z-20"></a>
             )}
