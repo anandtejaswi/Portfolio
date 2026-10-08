@@ -8,10 +8,14 @@ import Image from 'next/image';
 import Card from '../../ui/card';
 import { siteConfig } from '@/config/site';
 
-const DESCRIPTION = "I am a Computer Science engineering undergrad focused on cybersecurity and software development. I lead teams to build practical tools, including a web application that automates exam applications and a security system that analyzed over 220 GB of network data to detect and block threats. Currently I am conducting research at Delhi University on new methods to securely transmit digital images.";
+const DESCRIPTION = "Hi, I am Tejaswi. My work centers on building dependable software systems: from AI agents and hybrid-search retrieval pipelines to secure network protocols and full-stack web platforms. I have engineered production deployed AI agents using Langchain, LangGraph and Langsmith, researched lightweight cryptography for IoT networks at RV University, and organized developer events like CityJS New Delhi.";
 
-const TAGS = ['C Language', 'Python', 'Cybersecurity', 'AI/ML', 'UI/UX Design'];
-const ROLES = ['Developer', 'Cybersecurity Engineer', 'Designer'];
+const TAGS = ['Python', 'LangChain', 'Full-Stack', 'Cybersecurity', 'Research'];
+const ROLES = [
+    { article: 'a', role: 'Software Engineer' },
+    { article: 'an', role: 'AI Engineer' },
+    { article: 'a', role: 'Cybersecurity Engineer' },
+];
 
 function RoleRotator() {
     const [index, setIndex] = useState(0);
@@ -25,10 +29,10 @@ function RoleRotator() {
 
     return (
         <span className="inline-grid overflow-hidden align-bottom">
-            {ROLES.map((role, i) => (
+            {ROLES.map((item, i) => (
                 <span
-                    key={role}
-                    className={`col-start-1 row-start-1 transition-all duration-500 ease-in-out ${
+                    key={item.role}
+                    className={`col-start-1 row-start-1 flex items-baseline gap-1.5 transition-all duration-500 ease-in-out ${
                         i === index
                             ? 'opacity-100 translate-y-0'
                             : i === (index - 1 + ROLES.length) % ROLES.length
@@ -36,7 +40,8 @@ function RoleRotator() {
                             : 'opacity-0 -translate-y-full'
                     }`}
                 >
-                    {role}
+                    <span className="text-gray-800 dark:text-gray-200">{item.article}</span>
+                    <span className="text-blue-600 dark:text-blue-400">{item.role}</span>
                 </span>
             ))}
         </span>
@@ -64,7 +69,7 @@ export default function Intro() {
                 <div>
                     <p className='font-bold text-[22px] leading-tight'>Tejaswi Anand</p>
                     <p className='text-[15px] text-gray-500 dark:text-gray-400 mt-0.5'>
-                        Computer Engineering Student
+                        Software Engineer
                     </p>
                 </div>
             </div>
@@ -72,8 +77,8 @@ export default function Intro() {
             {/* Description */}
             <div className='flex flex-col gap-2 flex-1 overflow-y-auto no-scrollbar'>
                 <div className="font-semibold text-[17px] text-gray-800 dark:text-gray-200 flex items-center gap-1.5 shrink-0">
-                    <span>I am a</span>
-                    <span className="text-blue-600 dark:text-blue-400"><RoleRotator /></span>
+                    <span>I am</span>
+                    <RoleRotator />
                 </div>
                 <p className='text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 text-justify'>
                     {DESCRIPTION}
